@@ -87,7 +87,8 @@ textarea {
  -------------------------------------------------------------------------- */
 body, html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll; }
 
 body {
   background: url("../img/bg.jpg") no-repeat center top fixed;
@@ -114,8 +115,7 @@ body {
 
 @media (max-width: 48em) {
   .app_wrapper {
-    margin: 1em;
-    border-radius: 1em; }
+    margin: 1em; }
     .app_wrapper header .logo {
       display: block;
       margin: 0 auto;
@@ -125,17 +125,10 @@ body {
       text-align: center; } }
 @media (min-width: 50em) {
   .app_wrapper {
-    position: absolute;
     max-width: 1000px;
     width: 75%;
     min-width: 600px;
-    height: 100%;
-    overflow: scroll;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; } }
+    margin: auto; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
