@@ -78,6 +78,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* --------------------------------------------------------------------------
+ Px -> EM Conversion
+ (Reference about why media queries should be in EM - http://bit.ly/1l1EGHy)
+ -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+ App Styles
+ -------------------------------------------------------------------------- */
 body, html {
   height: 100%;
   width: 100%; }
@@ -90,22 +97,34 @@ body {
   -ms-behavior: url(../backgroundsize.min.htc); }
 
 .app_wrapper {
-  margin: 1em 1em 0;
   padding: 1em;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 1em; }
+  background-color: rgba(255, 255, 255, 0.9); }
+  .app_wrapper header {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 0.5em solid #c53232; }
+    .app_wrapper header .description h1 {
+      margin: 0;
+      color: #454545; }
   .app_wrapper .logo {
-    display: block;
-    margin: 1em auto;
+    margin-top: 1em;
     max-width: 150px;
-    width: 25%;
+    width: 100%;
     min-width: 80px; }
-  .app_wrapper .description {
-    text-align: center; }
 
-@media (min-width: 1000px) {
+@media (max-width: 48em) {
   .app_wrapper {
-    border-radius: 0;
+    margin: 1em;
+    border-radius: 1em; }
+    .app_wrapper header .logo {
+      display: block;
+      margin: 0 auto;
+      width: 25%;
+      margin-bottom: 1em; }
+    .app_wrapper header .description {
+      text-align: center; } }
+@media (min-width: 50em) {
+  .app_wrapper {
     position: absolute;
     max-width: 1000px;
     width: 75%;
