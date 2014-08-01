@@ -149,7 +149,7 @@ body {
 	min-width: 80px;
   }
   .content_main {
-	background: url('../img/kauffman_sm.jpg') no-repeat center top scroll;
+	background: url('../img/kauffman_sm.jpg') no-repeat center top;
 	background-size: cover;
   }
   .about {
@@ -168,17 +168,16 @@ body {
 	.fa {
 	  position: relative;
 	  font-size: 5.5em;
-	  background: rgba(255, 255, 255, 0.75);
+	  background: rgba(255, 255, 255, 0.6);
 	  padding: 0.5em;
 	  width: 2.2em;
 	  height: 2.2em;
 	  border-radius: 1.25em;
-	  transition: all 0.25s ease;
+	  transition: all 0.4s ease;
 	  &:hover{
 		cursor: pointer;
-		background: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 1);
 		text-shadow: 0 0 0.1em darken(#fff, 40%);
-		font-size: 5.75em;
 	  }
 	  &:after {
 		position: absolute;
@@ -194,6 +193,12 @@ body {
 	.socialShare .fa:after { content: 'Share Us'; }
 	.downloadPDF .fa:after { content: 'Overview PDF'; }
 	.storyShare .fa:after { content: 'Share a Story'; }
+  }
+  footer {
+	padding: 0.5em 0;
+	text-align:center;
+	background: #333;
+	color: #999;
   }
 }
 
@@ -214,7 +219,7 @@ body {
 	  .col { padding: 2em 0; }
 	  .fa {
 		&:hover{
-		  font-size: 6em;
+		  font-size: 5.5em;
 		}
 	  }
 	}
