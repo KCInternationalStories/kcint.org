@@ -131,11 +131,11 @@ body {
   font-size: 16px;
 }
 .app_wrapper {
-  padding: 1em;
+  padding: 1em 0 0;
   background-color: rgba(255,255,255,0.9);
+  header, .about { padding: 0 1em; }
   header {
 	padding-bottom: 1em;
-	margin-bottom: 1em;
 	border-bottom: 0.5em solid rgb(197,50,50);
 	.description h1 {
 		margin: 0;
@@ -148,6 +148,21 @@ body {
 	width: 100%;
 	min-width: 80px;
   }
+  .content_main {
+	background: url('../img/kauffman_sm.jpg') no-repeat center top;
+	background-size: cover;
+  }
+  .about {
+	padding: 1em 0;
+	border-bottom: 0.1em solid rgb(255,255,255);
+	p {
+	  font-size: 1.75em;
+	  color: #444;
+	  background-color: rgba(255,255,255,0.8);
+	  padding: 1em;
+	}
+  }
+  .engage { padding: 10em 1em; }
 }
 
 @media (max-width: em(768)) {
