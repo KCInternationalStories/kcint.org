@@ -130,7 +130,7 @@ body {
       margin: 0; }
   .app_wrapper .engage .col {
     text-align: center;
-    padding: 4em 0; }
+    padding: 8em 0; }
   .app_wrapper .engage .fa {
     position: relative;
     font-size: 5.5em;
@@ -179,8 +179,10 @@ body {
       padding: 2em 0; }
       .app_wrapper .engage .col {
         padding: 2em 0; }
-      .app_wrapper .engage .fa:hover {
-        font-size: 5.5em; } }
+      .app_wrapper .engage .fa {
+        background: rgba(255, 255, 255, 0.9); }
+        .app_wrapper .engage .fa:hover {
+          font-size: 5.5em; } }
 @media (min-width: 50em) {
   .app_wrapper {
     max-width: 1000px;

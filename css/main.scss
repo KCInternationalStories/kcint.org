@@ -164,7 +164,7 @@ body {
 	}
   }
   .engage {
-	.col { text-align: center; padding: 4em 0; }
+	.col { text-align: center; padding: 8em 0; }
 	.fa {
 	  position: relative;
 	  font-size: 5.5em;
@@ -218,6 +218,7 @@ body {
 	  padding: 2em 0;
 	  .col { padding: 2em 0; }
 	  .fa {
+		background: rgba(255, 255, 255, 0.9);
 		&:hover{
 		  font-size: 5.5em;
 		}
