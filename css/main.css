@@ -175,6 +175,9 @@ body {
       margin-bottom: 1em; }
     .app_wrapper header .description {
       text-align: center; }
+    .app_wrapper .about p {
+      font-size: 1.25em;
+      text-align: center; }
     .app_wrapper .engage {
       padding: 2em 0; }
       .app_wrapper .engage .col {
