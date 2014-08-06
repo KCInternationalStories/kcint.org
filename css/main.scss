@@ -111,6 +111,13 @@ textarea {
 }
 $browser_context: 16; // Used for unit based conversions like px > em
 
+// TODO Fix all that copypasta BS, modal and validation styles below too
+$color-purple: rgb(36,24,36);
+$color-black: rgb(10,10,10);
+$color-neutral-light: rgb(240,240,240);
+$color-fg-blue: rgb(16,92,116);
+$font-stack: arial, helvetica, sans-serif;
+
 
 /* --------------------------------------------------------------------------
  App Styles
@@ -244,6 +251,107 @@ body {
 	}
 }
 
+.feedback {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  .error {
+	margin-top: 0.5em;
+	color: $color-fg-blue;
+	background-color: orange;
+	padding: 0.25em;
+	width: 100%;
+  }
+  .messageWrap { margin-top: 1em; }
+  #message {
+	padding: 1em;
+	text-align: center;
+	* { color: $color-fg-blue; }
+	background: lighten($color-fg-blue, 30%);
+	h1 { font-family: $font-stack; font-style: 2em;}
+	.loader { margin-right: 0.5em; }
+  }
+  h1 { color: $color-neutral-light; }
+  p { color: darken($color-neutral-light, 15%); line-height: 135%; font-size: 1.5em; }
+  .btn {
+	margin-top: 0.75em;
+	background: orange;
+	&:hover {
+	  background: darken(orange, 10%)
+	}
+  }
+  label {
+	margin-top: 1em;
+	display: block;
+	text-align: left;
+  }
+  .feedback-inputWrap { margin: 2em 0 }
+  .feedback-userInput {
+	resize: none;
+	height: em(120);
+	width: 100%;
+  }
+}
+
+
+/*
+ * -------------------------------------------
+ *	$_MISC
+ * -------------------------------------------
+ */
+
+
+// Modal Styles
+body.modal-open {margin: 0 !important;}
+.invalidEmail {
+  position: relative;
+  font-size: 0.75em;
+  background-color: orange;
+  color: #fff;
+  font-family: arial, helvetica, sans-serif;
+}
+.modal { padding-top: 5%; }
+.has-warning .form-control,
+.has-warning .form-control:focus { border: 2px solid orange; }
+.modal-title span { color: orange; }
+.modal-content {
+  text-align: center;
+  background: $color-fg-blue url(../img/modal_bk.jpg) right 67%;
+  background-size: 200%;
+  border-radius: 0;
+  border: 1px solid darken(#3dadca, 25%);
+  color: #eee;
+  padding-bottom: 1em;
+  h1 { margin-bottom: 0.25em; }
+  label { display: block; }
+  input {
+	padding: 0.5em;
+	color: #eee;
+	background: darken($color-fg-blue,10%);
+	margin-bottom: 1em;
+	width: 100%;
+  }
+  .btn { margin-top: 0.5em; }
+  .btn-close { float: left; }
+  #mc-embedded-subscribe { float: right; }
+}
+.modal-confirmation {
+  display: none;
+  .btn-close { width: 100%; }
+}
+.modal-header {
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 0;
+  background-color: rgba(20,20,20,0.8);
+  color: #eee;
+  border-bottom: 1px solid darken(#3dadca, 25%);
+}
+.modal-body {
+  background: transparent;
+  padding-bottom: 0;
+  padding-top: 0.5em;
+}
 
 
 

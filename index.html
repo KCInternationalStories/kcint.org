@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body ng-app="">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -36,6 +36,19 @@
 		        <section class="about">
 			        <p>The Kansas City International Stories Initiative (KCISI) is a multimedia project highlighting the global connections that are cultivating a rich, midwestern community.</p>
 		        </section><!-- /.about -->
+		        <section class="emailSignup">
+			        <div class="newsletterSignup form-group">
+				        <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+					        <p class="invalidEmail">Please input a valid email address.</p>
+					        <div class="input-group">
+						        <input type="text" ng-model="userEmail" class="form-control" id="userEmail" placeholder="Enter email">
+					            <span class="input-group-btn">
+					              <button class="btn newsletterTrigger" type="button">Sign Up</button>
+					            </span>
+					        </div><!-- /input-group -->
+				        </div><!-- /.col-lg-6 -->
+			        </div><!-- /.row -->
+		        </section>
 		        <section class="engage">
 			        <a href="http://ctt.ec/C1_N7" target="_blank" class="socialShare col col-sm-4">
 				        <i class="fa fa-twitter"></i>
@@ -47,12 +60,57 @@
 				        <i class="fa fa-quote-left"></i>
 			        </a><!-- /.col -->
 		        </section><!-- /.engage -->
-	        </div><!-- /.mainContent -->
+		        </div><!-- /.mainContent -->
 	        <footer>Made with <i class="fa fa-heart"></i> in Kansas City.</footer>
         </div><!-- /.app_wrapper -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="newsletterSignupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+		        <div class="modal-content clearfix">
+			        <div class="modal-header">
+				        <h4 class="modal-title" id="myModalLabel">You are currently signing up with: <span>{{userEmail}}</span></h4>
+			        </div><!-- /.modal-header -->
+			        <div class="modal-body modal-confirmation">
+				        <h1>Thank You!</h1>
+				        <p>Make sure to check your email and confirm you subscription. You'll be sure to get updates on the latest from Function Gent!</p>
+				        <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+			        </div><!-- /.modal-confirmation -->
+			        <div class="modal-body modal-signup">
+				        <!-- Begin MailChimp Signup Form -->
+				        <div id="mc_embed_signup">
+					        <form action="http://kcint.us8.list-manage.com/subscribe/post?u=bc1b677600755e2b2d9345524&amp;id=646b2249fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						        <h1>You're Almost There...</h1>
+						        <div class="mc-field-group">
+							        <label for="mce-EMAIL">Email Address </label>
+							        <input type="email" value="{{userEmail}}" name="EMAIL" class="required email" id="mce-EMAIL">
+						        </div>
+						        <div class="mc-field-group">
+							        <label for="mce-FNAME">First Name </label>
+							        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+						        </div>
+						        <div class="mc-field-group">
+							        <label for="mce-LNAME">Last Name </label>
+							        <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+						        </div>
+						        <div id="mce-responses" class="clear">
+							        <div class="response" id="mce-error-response" style="display:none"></div>
+							        <div class="response" id="mce-success-response" style="display:none"></div>
+						        </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						        <div style="position: absolute; left: -5000px;"><input type="text" name="b_760a966259d3118ffaa22ac85_d385783d82" value=""></div>
+						        <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+						        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn clear">Subscribe</button>
+					        </form>
+				        </div><!-- /#mc_embed_signup -->
+			        </div><!-- /.modal-body -->
+		        </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+        </div><!-- /#newsletterSignupModal -->
+
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+        <!--<script src="bower_components/angular/angular.min.js"></script>-->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

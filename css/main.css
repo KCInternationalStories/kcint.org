@@ -195,6 +195,119 @@ body {
     width: 75%;
     min-width: 600px;
     margin: auto; } }
+.feedback {
+  padding-top: 4em;
+  padding-bottom: 4em; }
+  .feedback .error {
+    margin-top: 0.5em;
+    color: #105c74;
+    background-color: orange;
+    padding: 0.25em;
+    width: 100%; }
+  .feedback .messageWrap {
+    margin-top: 1em; }
+  .feedback #message {
+    padding: 1em;
+    text-align: center;
+    background: #39bbe4; }
+    .feedback #message * {
+      color: #105c74; }
+    .feedback #message h1 {
+      font-family: arial, helvetica, sans-serif;
+      font-style: 2em; }
+    .feedback #message .loader {
+      margin-right: 0.5em; }
+  .feedback h1 {
+    color: #f0f0f0; }
+  .feedback p {
+    color: #cacaca;
+    line-height: 135%;
+    font-size: 1.5em; }
+  .feedback .btn {
+    margin-top: 0.75em;
+    background: orange; }
+    .feedback .btn:hover {
+      background: #cc8400; }
+  .feedback label {
+    margin-top: 1em;
+    display: block;
+    text-align: left; }
+  .feedback .feedback-inputWrap {
+    margin: 2em 0; }
+  .feedback .feedback-userInput {
+    resize: none;
+    height: 7.5em;
+    width: 100%; }
+
+/*
+ * -------------------------------------------
+ *	$_MISC
+ * -------------------------------------------
+ */
+body.modal-open {
+  margin: 0 !important; }
+
+.invalidEmail {
+  position: relative;
+  font-size: 0.75em;
+  background-color: orange;
+  color: #fff;
+  font-family: arial, helvetica, sans-serif; }
+
+.modal {
+  padding-top: 5%; }
+
+.has-warning .form-control,
+.has-warning .form-control:focus {
+  border: 2px solid orange; }
+
+.modal-title span {
+  color: orange; }
+
+.modal-content {
+  text-align: center;
+  background: #105c74 url(../img/modal_bk.jpg) right 67%;
+  background-size: 200%;
+  border-radius: 0;
+  border: 1px solid #1d5b6a;
+  color: #eee;
+  padding-bottom: 1em; }
+  .modal-content h1 {
+    margin-bottom: 0.25em; }
+  .modal-content label {
+    display: block; }
+  .modal-content input {
+    padding: 0.5em;
+    color: #eee;
+    background: #0a3847;
+    margin-bottom: 1em;
+    width: 100%; }
+  .modal-content .btn {
+    margin-top: 0.5em; }
+  .modal-content .btn-close {
+    float: left; }
+  .modal-content #mc-embedded-subscribe {
+    float: right; }
+
+.modal-confirmation {
+  display: none; }
+  .modal-confirmation .btn-close {
+    width: 100%; }
+
+.modal-header {
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 0;
+  background-color: rgba(20, 20, 20, 0.8);
+  color: #eee;
+  border-bottom: 1px solid #1d5b6a; }
+
+.modal-body {
+  background: transparent;
+  padding-bottom: 0;
+  padding-top: 0.5em; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
