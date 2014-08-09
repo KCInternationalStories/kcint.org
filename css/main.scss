@@ -354,8 +354,15 @@ body.modal-open {margin: 0 !important;}
 	margin-bottom: 1em;
 	width: 100%;
   }
-  .btn { margin-top: 0.5em; background: rgb(47,99,169); color: #fff; }
-  .btn-close { float: left; background: #000; }
+  .btn {
+	margin-top: 0.5em;
+	background: rgb(47,99,169);
+	color: #fff;
+  }
+  .btn-close {
+	float: left;
+	background: #000;
+  }
   #mc-embedded-subscribe { float: right; }
 }
 .modal-confirmation {
