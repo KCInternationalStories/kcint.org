@@ -159,15 +159,41 @@ body {
 	background: url('../img/kauffman_sm.jpg') no-repeat center top;
 	background-size: cover;
   }
-  .about {
-	padding: 1em 0;
+  .about, .emailSignup {
 	border-bottom: 0.1em solid rgb(255,255,255);
+  }
+  .about {
+	padding: 1em 0 0;
 	p {
 	  font-size: 1.75em;
 	  color: #444;
 	  background-color: rgba(255,255,255,0.8);
 	  padding: 1em;
 	  margin: 0;
+	}
+  }
+  .emailSignup {
+	padding: 2em 0;
+	background: rgba(255, 255, 255, 0.6);
+	@extend .clearfix;
+	h1 {
+	  font-weight: bold;
+	  text-align: center;
+	  color: #000;
+	  font-size: 3.5em;
+	  margin-bottom: 0.5em;
+	  text-shadow: 0 0 0.25em rgba(255,255,255, 0.5);
+	}
+	.btn {
+	  color: #fff;
+	  background: rgb(47,99,169);
+	}
+	.invalidEmail {
+	  padding: 0.25em 1em;
+	  font-size: 1em;
+	}
+	.has-warning .form-control {
+	  border-color: rgb(47,99,169);
 	}
   }
   .engage {
@@ -184,6 +210,7 @@ body {
 	  width: 2.2em;
 	  height: 2.2em;
 	  border-radius: 1.25em;
+	  border: 1px solid #fff;
 	  transition: all 0.4s ease;
 	  &:hover{
 		cursor: pointer;
@@ -315,23 +342,20 @@ body.modal-open {margin: 0 !important;}
 .modal-title span { color: orange; }
 .modal-content {
   text-align: center;
-  background: $color-fg-blue url(../img/modal_bk.jpg) right 67%;
-  background-size: 200%;
+  background: #fff url(../img/brandmark_kcinit.png) right center;
+  background-size: 100%;
   border-radius: 0;
   border: 1px solid darken(#3dadca, 25%);
-  color: #eee;
   padding-bottom: 1em;
   h1 { margin-bottom: 0.25em; }
   label { display: block; }
   input {
 	padding: 0.5em;
-	color: #eee;
-	background: darken($color-fg-blue,10%);
 	margin-bottom: 1em;
 	width: 100%;
   }
-  .btn { margin-top: 0.5em; }
-  .btn-close { float: left; }
+  .btn { margin-top: 0.5em; background: rgb(47,99,169); color: #fff; }
+  .btn-close { float: left; background: #000; }
   #mc-embedded-subscribe { float: right; }
 }
 .modal-confirmation {
