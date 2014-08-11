@@ -205,7 +205,7 @@ body {
 	}
 	.fa {
 	  position: relative;
-	  font-size: 5.5em;
+	  font-size: 5.25em;
 	  background: rgba(255, 255, 255, 0.6);
 	  padding: 0.5em;
 	  width: 2.2em;
@@ -241,7 +241,7 @@ body {
   }
 }
 
-@media (max-width: em(768)) {
+@media (max-width: em(760)) {
   .app_wrapper {
 	margin: 1em;
 	header {
@@ -253,6 +253,7 @@ body {
 	  }
 	  .description { text-align: center; }
 	}
+	.content_main { background-image: url('../img/kauffman_mb.jpg') }
 	.about p {
 	  font-size: 1.25em;
 	  text-align: center;
@@ -270,7 +271,7 @@ body {
   }
 }
 
-@media (min-width: em(800)) {
+@media (min-width: em(760)) {
 	.app_wrapper {
 	  max-width: 1000px;
 	  width: 75%;

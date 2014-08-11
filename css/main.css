@@ -155,7 +155,7 @@ body {
     color: #333; }
   .app_wrapper .engage .fa {
     position: relative;
-    font-size: 5.5em;
+    font-size: 5.25em;
     background: rgba(255, 255, 255, 0.6);
     padding: 0.5em;
     width: 2.2em;
@@ -188,7 +188,7 @@ body {
     background: #333;
     color: #999; }
 
-@media (max-width: 48em) {
+@media (max-width: 47.5em) {
   .app_wrapper {
     margin: 1em; }
     .app_wrapper header .logo {
@@ -198,6 +198,8 @@ body {
       margin-bottom: 1em; }
     .app_wrapper header .description {
       text-align: center; }
+    .app_wrapper .content_main {
+      background-image: url("../img/kauffman_mb.jpg"); }
     .app_wrapper .about p {
       font-size: 1.25em;
       text-align: center; }
@@ -209,7 +211,7 @@ body {
         background: rgba(255, 255, 255, 0.9); }
         .app_wrapper .engage .fa:hover {
           font-size: 5.5em; } }
-@media (min-width: 50em) {
+@media (min-width: 47.5em) {
   .app_wrapper {
     max-width: 1000px;
     width: 75%;
